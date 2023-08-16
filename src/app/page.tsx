@@ -1,12 +1,22 @@
-import React from "react";
+"use client"
+
+import React, { useEffect } from "react";
 
 
 export default function Page(): React.ReactNode {
+
+  useEffect(() => {
+    const window_width = window.innerWidth;
+    const window_height = window.innerHeight;
+    console.debug(`${window_width}px x ${window_height}px`)
+  }, []);
+
   return (
     <main className="root">
       <img
+        className="logo"
         src="/expo-auto-body-logo.png"
-        width="500px"
+        width="100%"
         height="auto"
         draggable={false}
       />

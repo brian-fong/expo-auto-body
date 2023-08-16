@@ -1,6 +1,7 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Open_Sans } from 'next/font/google'
+import type { Metadata } from "next";
+import { Open_Sans } from "next/font/google";
+import Providers from './providers';
+import "./globals.css";
 
 
 // Constants for metadata
@@ -38,7 +39,9 @@ export default function Layout({
   return (
     <html lang="en">
       <body className={font.className}>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

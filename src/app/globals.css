@@ -20,7 +20,8 @@ main.root {
   min-height: 100vh;
   background-color: #292929;
 
-  > img {
+  > img.logo {
+    max-width: 500px;
     filter: brightness(80%);
   }
 
