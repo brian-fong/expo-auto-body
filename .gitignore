@@ -4,5 +4,8 @@ next-env.d.ts
 # Node Modules
 /node_modules
 
+# Next
+.next
+
 # Local env files
 .env
