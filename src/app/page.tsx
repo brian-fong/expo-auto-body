@@ -8,6 +8,7 @@ export default function Page(): React.ReactNode {
         src="/expo-auto-body-logo.png"
         width="500px"
         height="auto"
+        draggable={false}
       />
       <h1>
         Expo Auto Body website under construction 🏗️

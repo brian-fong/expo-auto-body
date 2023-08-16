@@ -13,16 +13,30 @@ body {
 main.root {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 5rem;
   min-width: 100vw;
   min-height: 100vh;
-  background-color: #1C1C1C;
+  background-color: #292929;
+
+  > img {
+    filter: brightness(80%);
+  }
 
   > h1 {
     color: white;
     font-size: 32px;
     font-weight: normal;
+    text-shadow: 4px 4px 8px black;
+    filter: brightness(90%);
+    user-select: none;
+    transition: all 200ms ease-in-out;
+  }
+
+  >img,
+  > h1:hover {
+    filter: brightness(100%);
+    letter-spacing: 1px;
   }
 }
