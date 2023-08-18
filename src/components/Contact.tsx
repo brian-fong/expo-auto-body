@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Flex,
   Heading,
@@ -45,8 +45,8 @@ export default function Services(): React.ReactNode {
       </Heading>
       <Flex
         flexWrap="wrap"
-        justifyContent="space-between"
-        gap="40px"
+        justifyContent="center"
+        gap="80px"
         width="100%"
       >
         <Flex
@@ -217,9 +217,6 @@ export default function Services(): React.ReactNode {
 
         <Flex
           flexDirection="column"
-          width="100%"
-          minWidth="600px"
-          maxWidth="800px"
           backgroundColor="blue.700"
           borderRadius="8px"
           boxShadow="12px 12px 12px rgba(0, 0, 0, 0.3)"
