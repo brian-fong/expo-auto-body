@@ -3,13 +3,17 @@
 import React, { useEffect } from "react";
 import {
   Flex,
+  Image,
 } from "@chakra-ui/react";
 import NavHeader from "@/components/NavHeader";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Contact from "@/components/Contact";
 
 
 export default function Page(): React.ReactNode {
+
+  const image_shop = "/shop/shop-8.jpg";
 
   useEffect(() => {
     const window_width = window.innerWidth;
@@ -21,19 +25,19 @@ export default function Page(): React.ReactNode {
     <Flex
       id="root"
       flexDirection="column"
-      paddingBottom="100px"
-      minWidth="1300px"
       minHeight="100vh"
-      backgroundColor="gray.800"
     >
       <NavHeader />
+      <Image
+        src={image_shop}
+        objectFit="cover"
+        width="100vw"
+        height="600px"
+        draggable={false}
+      />
       <About />
-      <Flex
-        id="body-container"
-        justifyContent="center"
-      >
-        <Services />
-      </Flex>
+      <Services />
+      <Contact />
     </Flex>
   );
 }

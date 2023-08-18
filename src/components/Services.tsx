@@ -1,7 +1,9 @@
 import React from "react";
 import {
   Flex,
+  Grid,
   Heading,
+  Text,
 } from "@chakra-ui/react";
 import { SERVICES } from "@/utils/services";
 import Service from "./Service";
@@ -11,32 +13,48 @@ export default function Services(): React.ReactNode {
   return (
     <Flex
       flexDirection="column"
-      marginTop="150px"
-      maxWidth="800px"
-      backgroundColor="gray.700"
-      borderRadius="8px"
-      boxShadow="12px 12px 12px rgba(0, 0, 0, 0.3)"
+      alignItems="center"
+      position="relative"
+      padding="80px"
+      backgroundColor="gray.800"
+      borderTopWidth="4px"
+      borderTopStyle="solid"
+      borderTopColor="gray.500"
     >
       <Heading
-        position="relative"
-        top="-20px"
-        left="-30px"
-        padding="8px 16px"
+        position="absolute"
+        top="-32px"
+        padding="16px 24px"
         width="min-content"
         color="white"
         fontSize="24px"
         whiteSpace="nowrap"
-        backgroundColor="gray.600"
+        backgroundColor="gray.800"
+        borderWidth="4px"
+        borderStyle="solid"
+        borderColor="gray.500"
         borderRadius="4px"
-        boxShadow="12px 12px 12px rgba(0, 0, 0, 0.3)"
       >
-        Services Offered:
+        Our Services
       </Heading>
-      <Flex
+      <Text
+        marginBottom="40px"
+        fontSize="18px"
+      >
+        Note: we provide
+        <Text
+          as="span"
+          fontStyle="italic"
+          fontWeight="bold"
+        > free </Text>
+        estimates and vehicle diagnoses. Please call in to make an 
+        appointment!
+      </Text>
+      <Grid
         id="services-container"
-        flexDirection="column"
-        gap="40px"
-        padding="20px 40px 40px"
+        gridTemplateColumns="repeat(auto-fill, minmax(500px, 1fr))"
+        gap="60px"
+        width="100%"
         color="gray.200"
       >
         {SERVICES.map((service, i) => (
@@ -45,7 +63,7 @@ export default function Services(): React.ReactNode {
             service={service}
           />
         ))}
-      </Flex>
+      </Grid>
     </Flex>
   );
 }
