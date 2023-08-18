@@ -21,7 +21,7 @@ export const SERVICES: Service[] = [
   },
   {
     name: "Glass Repair",
-    description: "Broken windshield or side window? We can replace it!",
+    description: "Broken windshield or side window? We have the tools to do a complete replacement.",
     image: "https://img.freepik.com/premium-photo/mechanics-man-changing-broken-windshield-automobile-windshield-windscreen-replacement-white-car-auto-repair-shop_29285-2340.jpg?w=2000",
     color: "green.600",
   },
