@@ -52,7 +52,6 @@ export default function Services(): React.ReactNode {
         <Flex
           flexDirection="column"
           gap="40px"
-          maxWidth="700px"
         >
           <Text
             maxWidth="700px"

@@ -17,7 +17,7 @@ export default function NavHeader(): React.ReactNode {
     <Flex
       position="fixed"
       gap="20px"
-      padding="15px"
+      padding="15px 30px"
       width="100%"
       alignItems="center"
       backgroundColor="rgba(0, 0, 0, 0.3)"
@@ -27,7 +27,7 @@ export default function NavHeader(): React.ReactNode {
       <Image
         src="/logo-horizontal.png"
         objectFit="contain"
-        maxWidth="200px"
+        maxWidth="250px"
         draggable={false}
       />
       <Flex
