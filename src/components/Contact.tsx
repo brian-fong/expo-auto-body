@@ -10,7 +10,7 @@ import {
   BsBoxArrowUpRight as LinkIcon,
 } from "react-icons/bs";
 import { HOURS } from "@/utils/hours";
-import { CONTACT_INFO } from "@/utils/contact";
+import { CONTACT_DICT } from "@/utils/contact";
 
 export default function Services(): React.ReactNode {
 
@@ -52,6 +52,7 @@ export default function Services(): React.ReactNode {
         <Flex
           flexDirection="column"
           gap="40px"
+          maxWidth="700px"
         >
           <Text
             maxWidth="700px"
@@ -63,7 +64,9 @@ export default function Services(): React.ReactNode {
           </Text>
 
           <Flex
-            gap="100px"
+            flexWrap="wrap"
+            columnGap="100px"
+            rowGap="50px"
             height="min-content"
           >
             <Flex
@@ -129,12 +132,12 @@ export default function Services(): React.ReactNode {
                   flexDirection="column"
                   width="100%"
                 >
-                  {CONTACT_INFO.map((contact, i) => (
+                  {["phone", "email"].map((contact, i) => (
                     <Text
                       key={i}
                       fontSize="18px"
                     >
-                      {contact.type}
+                      {CONTACT_DICT[contact].type}
                     </Text>
                   ))}
                 </Flex>
@@ -142,9 +145,11 @@ export default function Services(): React.ReactNode {
                   flexDirection="column"
                   width="100%"
                 >
-                  {CONTACT_INFO.map((contact, i) => (
+                  {["phone", "email"].map((contact, i) => (
                     <Link
                       key={i}
+                      href={CONTACT_DICT[contact].link}
+                      target="_blank"
                       width="min-content"
                       fontSize="18px"
                       whiteSpace="nowrap"
@@ -156,9 +161,54 @@ export default function Services(): React.ReactNode {
                       }}
                       _active={{ filter: "brightness(50%)" }}
                     >
-                      {contact.value}
+                      {CONTACT_DICT[contact].value}
                     </Link>
                   ))}
+                </Flex>
+              </Flex>
+            </Flex>
+
+            <Flex
+              flexDirection="column"
+            >
+              <Heading
+                marginBottom="4px"
+                fontSize="20px"
+                textDecoration="underline"
+              >
+                Location
+              </Heading>
+              <Flex
+                gap="30px"
+              >
+                <Flex
+                  flexDirection="column"
+                >
+                  <Text
+                    fontSize="18px"
+                  >
+                    Address
+                  </Text>
+                </Flex>
+                <Flex
+                  flexDirection="column"
+                  width="100%"
+                >
+                  <Link
+                    href={CONTACT_DICT.address.link}
+                    width="min-content"
+                    fontSize="18px"
+                    whiteSpace="nowrap"
+                    borderBottom="1px solid transparent"
+                    transition="all 100ms linear"
+                    _hover={{
+                      borderBottom: "1px solid white",
+                      filter: "brightness(70%)",
+                    }}
+                    _active={{ filter: "brightness(50%)" }}
+                  >
+                    {CONTACT_DICT.address.value}
+                  </Link>
                 </Flex>
               </Flex>
             </Flex>
@@ -188,7 +238,7 @@ export default function Services(): React.ReactNode {
           >
             {"We are located at "}
             <Link
-              href="https://www.google.com/maps/place/Expo+Auto+Body/@34.0901641,-118.0519663,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2da6ec8303217:0x5d84f3d19c7edd9!8m2!3d34.0901597!4d-118.0493914!16s%2Fg%2F1tfwds5g?entry=ttu"
+              href={CONTACT_DICT.address.link}
               target="_blank"
               display="inline-flex"
               alignItems="center"
@@ -206,7 +256,7 @@ export default function Services(): React.ReactNode {
               }}
               _active={{ filter: "brightness(50%)" }}
             >
-              4535 Baldwin Ave El Monte, CA 91731
+              {CONTACT_DICT.address.value}
               <LinkIcon
                 size="16px"
                 style={{
