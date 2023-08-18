@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Box,
   Flex,
   Heading,
   Image,
@@ -26,12 +25,12 @@ export default function Services(): React.ReactNode {
       backgroundColor="gray.600"
       borderTopWidth="4px"
       borderTopStyle="solid"
-      borderTopColor="gray.500"
+      borderTopColor="gray.400"
     >
       <Heading
         position="absolute"
         top="-32px"
-        padding="16px 24px"
+        padding="16px 64px"
         width="min-content"
         color="white"
         fontSize="24px"
@@ -39,7 +38,7 @@ export default function Services(): React.ReactNode {
         backgroundColor="gray.600"
         borderWidth="4px"
         borderStyle="solid"
-        borderColor="gray.500"
+        borderColor="gray.400"
         borderRadius="4px"
       >
         Contact
@@ -58,7 +57,7 @@ export default function Services(): React.ReactNode {
             maxWidth="700px"
             fontSize="18px"
           >
-            Give us a call to set up an appointment and we'll do our
+            Give us a call to set up an appointment, and we'll do our
             best to restore your vehicle and get you back on the road
             safely!
           </Text>

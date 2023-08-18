@@ -25,12 +25,12 @@ export default function About(): React.ReactNode {
       backgroundColor="gray.700"
       borderTopWidth="4px"
       borderTopStyle="solid"
-      borderTopColor="gray.500"
+      borderTopColor="red.500"
     >
       <Heading
         position="absolute"
         top="-32px"
-        padding="16px 24px"
+        padding="16px 64px"
         width="min-content"
         color="white"
         fontSize="24px"
@@ -38,7 +38,7 @@ export default function About(): React.ReactNode {
         backgroundColor="gray.700"
         borderWidth="4px"
         borderStyle="solid"
-        borderColor="gray.500"
+        borderColor="red.500"
         borderRadius="4px"
       >
         About Us

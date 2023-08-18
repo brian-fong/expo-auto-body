@@ -19,12 +19,12 @@ export default function Services(): React.ReactNode {
       backgroundColor="gray.800"
       borderTopWidth="4px"
       borderTopStyle="solid"
-      borderTopColor="gray.500"
+      borderTopColor="blue.500"
     >
       <Heading
         position="absolute"
         top="-32px"
-        padding="16px 24px"
+        padding="16px 64px"
         width="min-content"
         color="white"
         fontSize="24px"
@@ -32,7 +32,7 @@ export default function Services(): React.ReactNode {
         backgroundColor="gray.800"
         borderWidth="4px"
         borderStyle="solid"
-        borderColor="gray.500"
+        borderColor="blue.500"
         borderRadius="4px"
       >
         Our Services
