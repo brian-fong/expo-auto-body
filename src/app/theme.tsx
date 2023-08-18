@@ -1,4 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
+import Button from "@/components/theme/Button";
+import Link from "@/components/theme/Link";
 
 
 const theme = extendTheme({
@@ -10,6 +12,7 @@ const theme = extendTheme({
         backgroundColor: "gray.800",
         "&::-webkit-scrollbar": {
           width: "4px",
+          height: "4px",
         },
         "&::-webkit-scrollbar-thumb": {
           background: "gray.500",
@@ -21,6 +24,10 @@ const theme = extendTheme({
         },
       },
     },
+  },
+  components: {
+    Button,
+    Link,
   },
 });
 
