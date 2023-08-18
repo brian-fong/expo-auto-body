@@ -11,7 +11,7 @@ export default function Services(): React.ReactNode {
   return (
     <Flex
       flexDirection="column"
-      marginTop="120px"
+      marginTop="150px"
       maxWidth="800px"
       backgroundColor="gray.700"
       borderRadius="8px"

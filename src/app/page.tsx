@@ -6,7 +6,6 @@ import {
 } from "@chakra-ui/react";
 import NavHeader from "@/components/NavHeader";
 import About from "@/components/About";
-// import About from "@/components/AboutV2";
 import Services from "@/components/Services";
 
 
@@ -22,6 +21,7 @@ export default function Page(): React.ReactNode {
     <Flex
       id="root"
       flexDirection="column"
+      paddingBottom="100px"
       minWidth="1300px"
       minHeight="100vh"
       backgroundColor="gray.800"

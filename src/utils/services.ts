@@ -8,7 +8,7 @@ export interface Service {
 export const SERVICES: Service[] = [
   {
     name: "Mechanical",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "We can take care of a variety of mechanical issues, such as general tune-ups, diagnosing check-engine light indicators, AC freon, and overheating due to radiator, water-pump, or thermostat issues",
     image: "https://bentonroadautorepair.com/wp-content/uploads/2021/01/signs-your-cars-engine-cannot-be-repaired-and-must-be-replaced.jpg",
   },
   {
@@ -18,7 +18,7 @@ export const SERVICES: Service[] = [
   },
   {
     name: "Glass Repair",
-    description: "We're capable of restoring anything from small chips to replacing entire windshields.",
+    description: "Broken windshield or side window? We can replace it!",
     image: "https://img.freepik.com/premium-photo/mechanics-man-changing-broken-windshield-automobile-windshield-windscreen-replacement-white-car-auto-repair-shop_29285-2340.jpg?w=2000",
   },
   {
