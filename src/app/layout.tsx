@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     description,
     images: [url_logo],
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 0.3,
+  },
 };
 
 // Font: Open Sans
