@@ -25,15 +25,9 @@ export default function NavHeader(): React.ReactNode {
       zIndex={2}
     >
       <Image
-        src="/logo.png"
+        src="/logo-horizontal.png"
         objectFit="contain"
-        maxWidth="100px"
-        draggable={false}
-      />
-      <Image
-        src="/logo-car.png"
-        objectFit="contain"
-        maxWidth="100px"
+        maxWidth="200px"
         draggable={false}
       />
       <Flex
