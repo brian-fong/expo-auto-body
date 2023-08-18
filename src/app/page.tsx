@@ -2,11 +2,12 @@
 
 import React, { useEffect } from "react";
 import {
-  Box,
   Flex,
-  Heading,
-  Image,
 } from "@chakra-ui/react";
+import NavHeader from "@/components/NavHeader";
+import About from "@/components/About";
+// import About from "@/components/AboutV2";
+import Services from "@/components/Services";
 
 
 export default function Page(): React.ReactNode {
@@ -14,37 +15,24 @@ export default function Page(): React.ReactNode {
   useEffect(() => {
     const window_width = window.innerWidth;
     const window_height = window.innerHeight;
-    console.debug(`${window_width}px x ${window_height}px`)
+    console.debug(`${window_width}px x ${window_height}px`);
   }, []);
 
   return (
     <Flex
       id="root"
       flexDirection="column"
-      minWidth="100vw"
+      minWidth="1300px"
       minHeight="100vh"
       backgroundColor="gray.800"
     >
+      <NavHeader />
+      <About />
       <Flex
-        flexDirection="column"
+        id="body-container"
         justifyContent="center"
-        alignItems="center"
-        marginTop="50px"
       >
-        <Box
-          maxWidth="400px"
-        >
-          <Image
-            src="/expo-auto-body-logo.png"
-            objectFit="contain"
-          />
-        </Box>
-        <Heading
-          color="white"
-          fontWeight="normal"
-        >
-          Expo Auto Body website under construction 🏗️
-        </Heading>
+        <Services />
       </Flex>
     </Flex>
   );

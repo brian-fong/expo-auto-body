@@ -6,12 +6,12 @@ import Providers from './providers';
 // Constants for metadata
 const title: string = "Expo Auto Body";
 const description: string = "Expo Auto Body is a well-established, family-owned collision repair center, proudly serving our customers for over three decades.";
-const url_icon: string = "/expo-auto-body-icon.svg";
-const url_logo: string = "/expo-auto-body-logo.png";
+const url_favicon: string = "/favicon.svg";
+const url_logo: string = "/logo.png";
 export const metadata: Metadata = {
   title,
   description,
-  icons: { icon: url_icon },
+  icons: { icon: url_favicon },
   openGraph: {
     title,
     description,
