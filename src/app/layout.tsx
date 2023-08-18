@@ -9,6 +9,7 @@ const description: string = "Expo Auto Body is a well-established, family-owned 
 const url_favicon: string = "/favicon.svg";
 const url_logo: string = "/logo.png";
 export const metadata: Metadata = {
+  metadataBase: new URL("https://expoautobody.vercel.app/"),
   title,
   description,
   icons: { icon: url_favicon },
