@@ -74,6 +74,7 @@ export default function About(): React.ReactNode {
             src={image_streetview}
             objectFit="cover"
             objectPosition="center 10%"
+            maxWidth="500px"
             borderRadius="8px"
             boxShadow="12px 12px 12px rgba(0, 0, 0, 0.3)"
             draggable={false}
@@ -82,6 +83,7 @@ export default function About(): React.ReactNode {
           <Image
             src={image_office}
             objectFit="cover"
+            maxWidth="500px"
             borderRadius="8px"
             boxShadow="12px 12px 12px rgba(0, 0, 0, 0.3)"
             draggable={false}
@@ -90,6 +92,7 @@ export default function About(): React.ReactNode {
           <Image
             src={image_lot}
             objectFit="cover"
+            maxWidth="500px"
             borderRadius="8px"
             boxShadow="12px 12px 12px rgba(0, 0, 0, 0.3)"
             draggable={false}

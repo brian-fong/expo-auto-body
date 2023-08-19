@@ -17,11 +17,12 @@ export default function NavHeader(): React.ReactNode {
     <Flex
       position="fixed"
       gap="20px"
-      padding="15px 30px"
+      padding="15px"
       width="100%"
       alignItems="center"
       backgroundColor="rgba(0, 0, 0, 0.3)"
       backdropFilter="blur(12px)"
+      boxSizing="border-box"
       zIndex={2}
     >
       <Image

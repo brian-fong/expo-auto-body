@@ -52,9 +52,11 @@ export default function Services(): React.ReactNode {
         <Flex
           flexDirection="column"
           gap="40px"
+          width="100%"
+          maxWidth="700px"
+          height="min-content"
         >
           <Text
-            maxWidth="700px"
             fontSize="18px"
           >
             Give us a call to set up an appointment, and we'll do our
