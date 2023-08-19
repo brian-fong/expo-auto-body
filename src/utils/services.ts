@@ -27,7 +27,7 @@ export const SERVICES: Service[] = [
   },
   {
     name: "Detailing",
-    description: "Our detailing service includes steam cleaning for engine and interior, in addition to washing, polishing, waxing, and applying nano wax for exterior.",
+    description: "Our detailing service includes steam cleaning for engine and interior, in addition to washing, polishing, waxing, and applying ceramic wax for exterior.",
     image: "/shop/silver-car-1.png",
     color: "blue.600",
   },

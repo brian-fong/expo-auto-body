@@ -10,7 +10,7 @@ export const HOURS: Hours[] = [
   },
   {
     day: "Sat",
-    availability: "9:00 AM - 2:00 PM",
+    availability: "9:00 AM - 3:00 PM",
   },
   {
     day: "Sun",
