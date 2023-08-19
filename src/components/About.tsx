@@ -66,8 +66,9 @@ export default function About(): React.ReactNode {
           {text}
         </Text>
 
-        <Grid
-          gridTemplateColumns="repeat(3, minmax(1fr, 500px))"
+        <Flex
+          flexWrap="wrap"
+          justifyContent="center"
           gap="40px"
         >
           <Image
@@ -97,7 +98,7 @@ export default function About(): React.ReactNode {
             boxShadow="12px 12px 12px rgba(0, 0, 0, 0.3)"
             draggable={false}
           />
-        </Grid>
+        </Flex>
       </Flex>
     </Flex>
   );
