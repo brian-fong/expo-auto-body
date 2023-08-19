@@ -67,7 +67,7 @@ export default function About(): React.ReactNode {
         </Text>
 
         <Grid
-          gridTemplateColumns="1fr 1fr 1fr"
+          gridTemplateColumns="repeat(3, minmax(1fr, 500px))"
           gap="40px"
         >
           <Image
